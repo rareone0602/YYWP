@@ -8,6 +8,7 @@
  *
  */
 if ( ! class_exists( 'CSF_Fields' ) ) {
+  #[AllowDynamicProperties]
   abstract class CSF_Fields extends CSF_Abstract {
 
     public function __construct( $field = array(), $value = '', $unique = '', $where = '', $parent = '' ) {
