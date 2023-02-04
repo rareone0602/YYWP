@@ -12,8 +12,8 @@
 $reception_background = iro_opt('reception_background');
 ?>
 	</div><!-- #content -->
-	<?php 
-			comments_template('', true); 
+	<?php
+			comments_template('', true);
 	?>
 </div><!-- #page Pjax container-->
 	<footer id="colophon" class="site-footer" role="contentinfo">
@@ -30,21 +30,7 @@ $reception_background = iro_opt('reception_background');
 			<div class="footer-device function_area">
 					<?php if(iro_opt('footer_yiyan')){ ?>
 						<p id="footer_yiyan"></p>
-						<?php } ?>
-					<span style="color: #b9b9b9;">
-						<?php /* 能保留下面两个链接吗？算是我一个小小的心愿吧~ */ ?>
-						<?php if (iro_opt('footer_load_occupancy', 'true')): ?>
-                        <?php printf(
-                            _x( 'Load Time %.3f seconds | %d Query | RAM Usage %.2f MB ', 'footer load occupancy', 'sakurairo' ),
-                            timer_stop( 0, 3 ),get_num_queries(),memory_get_peak_usage() / 1024 / 1024);
-                        ?>
-                        <?php endif; ?>
-						<?php if (iro_opt('footer_upyun', 'true')): ?>
-							本网站由 <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank"> <img alt="upyun-logo" src="https://s.nmxc.ltd/sakurairo_vision/@2.5/options/upyun_logo.webp"  style="display:inline-block;vertical-align:middle;width:60px;height:30px;"/> 提供 CDN 加速 / 云存储 服务
-                        <?php endif; ?>
-                        <br>
-						<a href="https://github.com/mirai-mamori/Sakurairo" rel="noopener" target="_blank" id="site-info" >Theme Sakurairo</a><a href="https://fuukei.org/" rel="noopener" target="_blank" id="site-info" > by Fuukei</a> 
-					</span>
+					<?php } ?>
 			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
@@ -52,7 +38,7 @@ $reception_background = iro_opt('reception_background');
 	<!-- m-nav-center -->
 	<div id="mo-nav">
 		<div class="m-avatar">
-			<?php 
+			<?php
 			$personal_avatar = iro_opt('personal_avatar');
 			$iro_logo = iro_opt('iro_logo');
 			$ava = iro_opt('personal_avatar') ? $personal_avatar: ($iro_logo ?: iro_opt('vision_resource_basepath','https://s.nmxc.ltd/sakurairo_vision/@2.5/').'series/avatar.webp'); ?>
